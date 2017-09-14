@@ -1,0 +1,22 @@
+//Browser upgrade
+.browser-update{
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    position:absolute;
+    text-align:center;
+    z-index:9999;
+    .update-info-wrap{
+       width:500px;
+       margin:90px auto;
+       padding:40px 20px;
+    }
+    p {
+    margin:0;
+    color: #000;
+    padding: 3em 0 0;
+    a{
+        color:#455560;
+    }
+}
+}

@@ -1,0 +1,143 @@
+//RTE styles
+
+/*-----image alignments-----*/
+
+.image-left {
+    margin: 5px 15px 10px 0!important;
+    float:left;
+    @include bd-custom-max(540px) {
+        display: block;
+        width: 100%;
+    }
+    @include bd-sm {
+        margin: 5px 27px 10px 0;
+    }
+}
+
+.image-right {
+    float: right;
+    display: inline-block;
+    margin: 5px 0 5px 15px!important;
+      @include bd-sm {
+        margin: 5px 0 10px 27px!important;
+    }
+     @include bd-custom-max(540px) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.image-center {
+    display: block;
+    text-align: center;
+    float: none;
+    img {
+        margin: 5px 10px!important;
+        display: inline-block;
+    }
+    @include bd-sm-bl {
+        img {
+            width: 80%;
+        }
+    }
+}
+
+//Table
+.tablewithborder,
+.tablewithheading_border {
+    border: 1px solid;
+    margin-bottom: 20px!important;
+}
+
+table.tablewithborder td,
+table.tablewithborder tr {
+    border: 1px solid !important;
+}
+
+table.tablewithheading_border td,
+table.tablewithheading_border th,
+table.tablewithheading_border tr {
+    border: 1px solid !important;
+    padding: 5px;
+}
+
+table.tablewithheading_border th {
+    background-color: #B8B8B8;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+// table style border
+table.tablewithheading_border {
+    tbody tr:nth-child(1) {
+        td {
+            font-weight: bold;
+            background-color: #f4394f;
+            color: white;
+            border: 1px solid #000 !important;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                margin: 0 !important;
+                color: white !important;
+                padding: 3px 0;
+            }
+        }
+    }
+}
+
+
+/* override table styles */
+
+
+/* tablet mobile table styles */
+
+
+/* this will fit three columns */
+
+table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    min-width: 280px;
+}
+
+table td {
+    width: auto !important;
+}
+
+
+/* Small fonts for mobile */
+
+@media (max-width: 767px) {
+    table th,
+    table th p,
+    table td,
+    table td p {
+        font-size: 12px !important;
+        line-height: 1.2;
+    }
+}
+
+
+/* Medium fonts for tablet */
+
+@media (max-width: 1025px) {
+    table th,
+    table th p,
+    table td,
+    table td p {
+        font-size: 14px !important;
+    }
+}
+
+table tr>td>a {
+    &:hover {
+        text-decoration: underline;
+    }
+    text-decoration: underline;
+}

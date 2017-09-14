@@ -1,0 +1,82 @@
+// ---------------- Flex Grids --------------
+[class*='flex-grid'] {
+    @include display-flex;
+    @include flex-prop(flex-flow, row wrap);
+    &:after,
+    &:before {
+        display: none;
+    }
+    > * {
+        max-width: 100%;
+    }
+    &.flex-justify-space-between {
+        @include justify-content(space-between);
+    }
+    &.flex-justify-space-around {
+        @include justify-content(space-around);
+    }
+    &.flex-align-bottom {
+        @include align-items(flex-end);
+    }
+    &.flex-align-center {
+        @include align-items(center);
+    }
+    &.flex-align-center {
+        @include align-items(center);
+    }
+}
+
+.flex-grid-sm {
+    @include bd-sm-bl {
+        display: initial;
+    }
+}
+
+.flex-display {
+    @include display-flex;
+}
+
+@include bd-md {
+    .flex-md-1 {
+        @include flex-value(1);
+    }
+    .flex-md-1p1 {
+        @include flex-value(1.1);
+    }
+    .flex-md-p7 {
+        @include flex-value(.7);
+    }
+    .flex-md-p8 {
+        @include flex-value(.8);
+    }
+    .flex-md-p5 {
+        @include flex-value(.5);
+    }
+}
+
+@include bd-lg {
+    .flex-lg-1 {
+        @include flex-value(1);
+    }
+    .flex-lg-1p1 {
+        @include flex-value(1.1);
+    }
+    .flex-lg-p7 {
+        @include flex-value(.7);
+    }
+    .flex-lg-p8 {
+        @include flex-value(.8);
+    }
+    .flex-lg-p5 {
+        @include flex-value(.5);
+    }
+}
+
+// Inline grids
+.inline-grid {
+    > * {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

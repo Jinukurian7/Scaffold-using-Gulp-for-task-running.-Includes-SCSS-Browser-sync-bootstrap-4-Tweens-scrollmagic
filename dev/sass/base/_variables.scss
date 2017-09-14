@@ -1,0 +1,104 @@
+// paths 
+$image_path : "../images";
+$font_path  :  "../fonts";
+
+// Fonts 
+$font-1  : 'font', sans-serif;
+$font-2     : 'font',sans-serif;
+$font-family  : $font-1;
+$font-family-secondary : $font-2; 
+// Typo
+
+$font-size-root: 16px;
+
+$font-size-base: 1rem;
+
+$font-size-h1:            (60px / $font-size-root) + rem;
+$font-size-h2:            (55px / $font-size-root) + rem;
+$font-size-h3:            (40px / $font-size-root) + rem;
+$font-size-h4:            (30px / $font-size-root) + rem;; 
+$font-size-h5:            $font-size-root;
+$font-size-h6:            ceil(($font-size-root * 0.85)); 
+$line-height-base:       1.4;
+$headings-line-height :      1.222;
+$line-height-h1: $headings-line-height;
+$line-height-h2:  $headings-line-height ;
+$line-height-h3:  $headings-line-height ;
+$line-height-h4:  $headings-line-height ;
+$small-font-size:      (14px / $font-size-root) + rem;
+
+// Border radius
+
+$border-radius : 2px;
+
+// Grid
+$screen-xs : 480px;
+$screen-sm : 641px;
+$screen-tab : 769px;
+$screen-md : 992px;
+$screen-lg : 1025px;
+$screen-xl : 1200px;
+$screen-xxl : 1400px;
+
+$grid-gutter-width-base : 30px;
+$container-sm : 640px;
+$container-md : 720px;
+$container-lg : 990px;
+$container-xl : 1140px + $grid-gutter-width-base; 
+$grid-float-breakpoint : $screen-lg;
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl,
+);
+
+$container-max-widths: (
+  // sm: $container-sm,
+  // md: $container-md,
+  lg: $container-lg,
+  xl: $container-xl,
+ // xxl: $container-xxl
+);
+
+// Color palette
+$color-green: #7bbe72;
+$color-grey : #5d6264;
+$color-dark : #253338;
+$color-dark-grey : #455560;
+$color-medium-grey: #9aa2a8;
+$color-light-grey: #a0b0b6;
+$color-light-grey-v1: #f4f5f5;
+
+// Form elemets
+$input-color : $color-medium-grey;
+$input-border : #d3d6d7;
+$input-border-focus : #000;
+$input-border-radius :0;
+$input-color-placeholder : #000;
+$link-hover: #263f6a;
+$footer-link-light: #9ea6ac;
+
+// Headers
+$heading-color : $color-dark;
+
+// Body
+$foreground-color : $color-grey; 
+$background-color : #e1e4e5;
+
+
+//Border colors 
+$box-border: #eeefef;
+
+// Highlights
+$highlightColor : $color-dark;
+
+// Bread Crums
+$breadcrumb-color: $color-dark-grey;
+$breadcrumb-active-color:$color-medium-grey;
+$breadcrumb-padding-vertical:   8px;
+$breadcrumb-padding-horizontal: 30px;

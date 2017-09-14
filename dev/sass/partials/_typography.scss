@@ -1,0 +1,59 @@
+/* Typography */
+body {
+    font-family: $font-family;
+    color: $foreground-color;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: $heading-color;
+    font-family: $font-family-secondary; 
+    font-weight: 500;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+p{
+    @include calculateRem(17px, $font-size-root);
+    line-height: 1.765;
+}
+
+h1, .h1{
+    @include calculateRem(45px, $font-size-root);
+}
+h2, .h2{
+    @include calculateRem(30px, $font-size-root);
+}
+h3, .h3{
+    @include calculateRem(25px, $font-size-root);
+}
+h4, .h4{
+    @include calculateRem(22px, $font-size-root);
+}
+h5, .h5{
+    @include calculateRem(17px, $font-size-root);
+}
+h6, .h6{
+    @include calculateRem(15px, $font-size-root);
+}
+header {
+    h1,h2,h3,h4,h5 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}

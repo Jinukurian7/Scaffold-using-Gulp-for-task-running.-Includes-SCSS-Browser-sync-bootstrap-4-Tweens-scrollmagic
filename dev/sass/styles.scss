@@ -1,0 +1,12 @@
+/*!
+ * Name   : Scaffold
+ * Author : Jinu Kurian
+ */
+@import "base/variables",  // Custom variables
+        "base/mixins";    // Custom Mixins
+
+/* Bootstrap */
+@import "vendors/bootstrap/bootstrap";
+
+/* Main Theme */
+@import "partials/THEME";  

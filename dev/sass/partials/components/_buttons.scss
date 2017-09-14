@@ -1,0 +1,64 @@
+// --------------------- buttons ------------------
+@function set-text-color($color) {
+    @if (lightness($color) > 60) {
+        @return $color-dark; // Lighter backgorund, return dark color
+    }
+    @else {
+        @return #ffffff; // Darker background, return light color
+    }
+}
+
+@mixin button($color) {
+    background-color: $color;
+    color: set-text-color($color);
+    &:hover,&:focus,&:active{
+        background-color: lighten($color, 5%);
+    }
+}
+
+.btn {
+    text-align: center;
+    color: #fff;
+    @include calculateRem(17px, $font-size-root);
+    line-height: 1;
+    padding: 15px;
+    min-width: 160px;
+    border-radius: 3px;
+    white-space: normal;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    background: $color-green;
+    font-family: $font-family-secondary;
+    @include transitions(ease .3s);
+    &.btn-small {
+        padding: 8px 35px;
+    }
+    &.btn-medium {
+        padding: 11px 25px;
+    }
+    &.btn-large {
+        padding: 16px 45px;
+        @include bd-sm {
+            padding: 24px 110px;
+        }
+    }
+    &.inactive {
+        opacity: .4;
+        // pointer-events: none;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus:active {
+        color: #fff;
+        outline: none;
+        background: #72ab6c;
+    }
+}
+
+.clean-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
