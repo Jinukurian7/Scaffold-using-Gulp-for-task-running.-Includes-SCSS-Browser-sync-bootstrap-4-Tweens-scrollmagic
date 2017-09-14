@@ -84,6 +84,7 @@ gulp.task('scripts', function() {
         gulp.src('dev/lib/jquery-2.1.1.min.js'),
         gulp.src('dev/lib/ScrollMagic.js'),
         gulp.src('dev/lib/bootstrap.min.js'), 
+        gulp.src('dev/lib/slick.min.js'), 
         gulp.src('dev/lib/greensock/TweenMax.min.js'),
         gulp.src('dev/lib/ScrollMagic.min.js'),
         gulp.src('dev/lib/plugins/animation.gsap.min.js'),
