@@ -81,7 +81,7 @@ gulp.task('svg-sprites', function() {
 // Gulp streamqueue
 gulp.task('scripts', function() {
     return streamqueue({ objectMode: true },
-        gulp.src('dev/lib/jquery.min.js'),
+        gulp.src('dev/lib/jquery-2.1.1.min.js'),
         gulp.src('dev/lib/ScrollMagic.js'),
         gulp.src('dev/lib/bootstrap.min.js'), 
         gulp.src('dev/lib/greensock/TweenMax.min.js'),
